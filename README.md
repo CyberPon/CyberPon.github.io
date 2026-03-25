@@ -103,7 +103,7 @@ This rule monitors write and attribute changes to the `auth.log` file, where aut
 
 **Step 5: Save and close the file.**
 
-If you are using `nano`, press `Ctrl+O` to save, then `Enter`, and `Ctrl+X` to exit.
+If you are using `nano`, press `Ctrl+O` to save, press `Enter` to confirm the filename, then `Ctrl+X` to exit.
 
 **Step 6: Load the new audit rules.**
 
@@ -124,7 +124,7 @@ Now that your audit rules are configured, you will perform actions that trigger 
 * **Trigger file access rule:** Attempt to modify `/etc/passwd` (you might need `sudo` for this, but even a failed attempt will be logged).
   ```bash
 sudo nano /etc/passwd
-# Make a small change, then exit without saving (Ctrl+X to exit, then N to decline saving, then Enter to confirm)
+# Make a small change, then exit without saving (Ctrl+X to exit, then N to decline saving)
 ```
 * **Trigger program execution rule:** Run a common command like `ls` or `cat`.
   ```bash
