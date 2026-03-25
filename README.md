@@ -124,7 +124,7 @@ Now that your audit rules are configured, you will perform actions that trigger 
 * **Trigger file access rule:** Attempt to modify `/etc/passwd` (you might need `sudo` for this, but even a failed attempt will be logged).
   ```bash
 sudo nano /etc/passwd
-# Make a small change, then exit without saving (Ctrl+X, N, Enter in nano)
+# Make a small change, then exit without saving (Ctrl+X to exit, then N to decline saving, then Enter to confirm)
 ```
 * **Trigger program execution rule:** Run a common command like `ls` or `cat`.
   ```bash
